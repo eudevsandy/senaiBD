@@ -12,7 +12,7 @@ Descrição dos relacionamentos:
 * Os personagens possuem uma classe específica;  
 * Cada classe possui uma ou mais habilidades.
 
-![image](https://user-images.githubusercontent.com/85913563/174456346-26081285-86ca-4b46-bc17-bf5f5fee901b.png)
+![image](https://user-images.githubusercontent.com/85913563/174456634-77f317a0-31a4-4116-a3ed-e73bf681f078.png)
 
 ## Tecnologias Utilizadas
 
