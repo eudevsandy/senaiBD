@@ -1,3 +1,12 @@
+CREATE DATABASE RPGONLINEBD
+
+USE RPGONLINEBD
+
+CREATE TABLE Usuarios(
+   UsuarioID INT PRIMARY KEY IDENTITY,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Senha VARCHAR(255) NOT NULL
+)
 CREATE TABLE Classes(
 	ClasseID INT PRIMARY KEY IDENTITY,
 	Nome VARCHAR(50) UNIQUE NOT NULL,
@@ -21,22 +30,22 @@ CREATE TABLE ClasseHabilidade(
 	HabilidadeID INT FOREIGN KEY REFERENCES Habilidades(HabilidadeID)
 )
 INSERT INTO Usuarios (Email, Senha) VALUES ('jessicag@gmail.com','123456')
-INSERT INTO	Classes (Nome, Descricao) VALUES ('ElÈtrico Puro','O tipo elÈtrico È super efetivo contra os tipos Voador, ¡gua; 
-… pouco efetivo contra: Drag„o, ElÈtrico e Planta; N„o tem efeito contra: Terrestre ; Tem resistÍncia a: ElÈtrico, Voador e AÁo; Tem fraqueza a: Terrestre ; N„o s„o imune a nenhum outro tipo')
-INSERT INTO Habilidades (Nome) VALUES ('Est·tico'),('P·ra raio')
+INSERT INTO	Classes (Nome, Descricao) VALUES ('El√©trico Puro','O tipo el√©trico √© super efetivo contra os tipos Voador, √Ågua; 
+√â pouco efetivo contra: Drag√£o, El√©trico e Planta; N√£o tem efeito contra: Terrestre ; Tem resist√™ncia a: El√©trico, Voador e A√ßo; Tem fraqueza a: Terrestre ; N√£o s√£o imune a nenhum outro tipo')
+INSERT INTO Habilidades (Nome) VALUES ('Est√°tico'),('P√°ra raio')
 INSERT INTO Personagem (NomePersonagem, UsuarioID, ClasseID) VALUES ('Raiuchu', 1, 1)
 INSERT INTO ClasseHabilidade (ClasseID, HabilidadeID) VALUES (1,1), (1,2)
 
 INSERT INTO Usuarios (Email, Senha) VALUES ('caique@gmail.com','654321')
-INSERT INTO	Classes (Nome, Descricao) VALUES ('Voador Puro',' O tipo voador È super efetivo contra: Inseto, Lutador e Planta; … pouco efetivo contra: ElÈtrico, Pedra e AÁo;
-Tem resistÍncia a: Inseto, Lutador e Planta;Tem fraqueza a: ElÈtrico, Gelo e Pedra;… imune a: Terrestre;')
-INSERT INTO Habilidades (Nome) VALUES ('Super ForÁa'),('Multi Ataque')
+INSERT INTO	Classes (Nome, Descricao) VALUES ('Voador Puro',' O tipo voador √© super efetivo contra: Inseto, Lutador e Planta; √â pouco efetivo contra: El√©trico, Pedra e A√ßo;
+Tem resist√™ncia a: Inseto, Lutador e Planta;Tem fraqueza a: El√©trico, Gelo e Pedra;√â imune a: Terrestre;')
+INSERT INTO Habilidades (Nome) VALUES ('Super For√ßa'),('Multi Ataque')
 INSERT INTO Personagem (NomePersonagem, UsuarioID, ClasseID) VALUES ('Tornadus', 2, 2)
 INSERT INTO ClasseHabilidade (ClasseID, HabilidadeID) VALUES (2,3), (2,4)
 
 INSERT INTO Usuarios (Email, Senha) VALUES ('bidu@gmail.com','789012')
-INSERT INTO	Classes (Nome, Descricao) VALUES ('ElÈtrico Vadoro','DecriÁ„o a ser atualizada')
-INSERT INTO Habilidades (Nome) VALUES ('Asas elÈtricas')
+INSERT INTO	Classes (Nome, Descricao) VALUES ('El√©trico Vadoro','Decri√ß√£o a ser atualizada')
+INSERT INTO Habilidades (Nome) VALUES ('Asas el√©tricas')
 INSERT INTO Personagem (NomePersonagem, UsuarioID, ClasseID) VALUES ('Emolga', 3, 3)
 INSERT INTO ClasseHabilidade (ClasseID, HabilidadeID) VALUES (3,5)
 INSERT INTO ClasseHabilidade (ClasseID, HabilidadeID) VALUES (3,1)
