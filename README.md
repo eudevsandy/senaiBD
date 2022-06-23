@@ -16,4 +16,4 @@ Descrição dos relacionamentos:
 
 ## Tecnologias Utilizadas
 
-Mysql Server Community 
+SQL Server
