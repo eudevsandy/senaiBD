@@ -55,3 +55,11 @@ SELECT * FROM Classes
 SELECT * FROM Habilidades
 SELECT * FROM Personagem
 SELECT * FROM ClasseHabilidade
+
+CREATE LOGIN jessig
+WITH PASSWORD = '1234'
+CREATE USER jessig FOR LOGIN jessig
+GRANT SELECT TO jessig
+
+
+
