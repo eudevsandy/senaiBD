@@ -1,18 +1,19 @@
-## Escopo
-Desenvolver um banco de dados  que será utilizado na criação de um RPG online.
+## Sobre o banco
 
-## MER e Diagrama DER
+**Escopo**
+Banco de dados  a ser utilizado na criação de um RPG online.
 
-Nome do banco: RPGONLINEBD
+**Nome:** RPGONLINEBD
 
-Tabelas existentes: Usuário, Personagem, Classe, Habilidade, classeHabilidade
+**Tabelas existentes:** Usuário, Personagem, Classe, Habilidade, classeHabilidade
 
-Descrição dos relacionamentos: 
+**Descrição dos relacionamentos:**
 * Cada usuário possui um personagem exclusivo;
 * Os personagens possuem uma classe específica;  
 * Cada classe possui uma ou mais habilidades.
 
-![image](https://user-images.githubusercontent.com/85913563/174456634-77f317a0-31a4-4116-a3ed-e73bf681f078.png)
+**Segurança**
+* Jogo direcionado a +13: Usuários com idade inferior tem acesso restringido a somente leitura.
 
 ## Tecnologias Utilizadas
 
